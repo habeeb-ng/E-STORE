@@ -4,7 +4,7 @@
     top: 0;
     background-color: #fff;
     border-bottom: 1px solid lightgray;
-    position: relative;
+    /* position: relative; */
 }
 .Header .container{
     display: flex;
@@ -12,6 +12,7 @@
 }
 .Header__logo{
     flex:.1;
+    cursor: pointer;
 }
 .Header__logo> h2{
     font-size: 30px;
@@ -77,6 +78,9 @@
     .Header__logo{
         flex:.27;
         justify-content: flex-start;
+    }
+    .Header__logo h2{
+        font-size: 20px;
     }
     .header__search{
     flex: .6;

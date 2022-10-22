@@ -21,10 +21,35 @@ import SignIn from './SignIn';
 import SignUp from './SignUp';
 import Filtered from './Filtered';
 import Filters from "./search"
+import { onAuthStateChanged } from "firebase/auth"
+import { auth, db } from "./backend/firebase"
+import { login, logout} from "./features/userSlice"
+import { useDispatch } from 'react-redux';
+import { doc, getDoc } from 'firebase/firestore';
 
 function App() {
   const [searchProducts, setSearchProducts] = useState()
   const { data: products } = useFetchProduct("https://dummyjson.com/products");
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      console.log("user status changed", user);
+      if (user) {
+        getDoc(doc(db, "Users", user.uid))
+        .then((doc) => {
+          dispatch(login({
+            fullName: doc.data().fullName,
+            userId: doc.data().userId,
+            email: doc.data().email,
+            cart: doc.data().cart, //map the cart into the array
+          }))
+        })
+      } else {
+        dispatch(logout())
+      }
+    })
+  },[])
   
   return (
     <Router>

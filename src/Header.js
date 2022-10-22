@@ -31,7 +31,7 @@ function Header({ setSearch, sidebar, setSideBar }) {
     <div className="Header">
         <div className="container">
               {/* logo */}
-            <div className="Header__logo">
+            <div className="Header__logo" onClick={()=>{navigate("/")}}>
                 <h2>E-STORE</h2> 
             </div>
             {/* search */}
