@@ -1,0 +1,33 @@
+
+.App{
+  /* background-color: #e9ecef; */
+  margin: 0 auto;
+  
+}
+
+
+@media screen and (max-width: 500px){
+  .App{
+    max-width: 100vw;
+    
+  }
+}
+
+
+@media screen and (min-width: 500px){
+  .App{
+    max-width: 100vw;
+  }
+  
+}
+@media screen and (min-width: 780px){
+  .app-content{
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .app-content{
+    /* max-width: 1280px; */
+  }
+}

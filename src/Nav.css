@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+
+
+
+.Nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /* color: #0077b6; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    
+}
+.nav__left{
+    flex: 0.3;
+}
+.nav__right{
+    flex: 0.8;
+}
+
+.nav--left h2{
+    font-size: 30px;
+    /* color: #495057; */
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    
+    padding: 8px;
+    /* width: 100px; */
+    border-radius: 8px;
+}
+.nav__right__laptop{
+    display: none;
+}
+/* .MuiSvgIcon-root{
+    font-size: 40px;
+} */
+.nav__right{
+    display: flex;
+    justify-content: right;
+    /* width: 100px; */
+}
+.nav__menu{
+    background-color: white;
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    position: fixed;
+    top: -100%;
+    /* right: -100%; */
+    transition: 0.5s;
+}
+.active{
+    position: fixed;
+    top: 0 !important;
+    /* right: 0 !important; */
+    transition: 0.5s;
+}
+.nav__menu li{
+    list-style: none;
+    width:100% !important;
+    display: flex;
+    justify-content: end;
+    /* align-items: end; */
+    height: 40px;
+}
+.nav__menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    /* text-align: center !important; */
+    
+}
+.menu__list__icon,
+.nav__open{
+    font-size: 25px !important;
+    box-sizing: border-box;
+}
+/* .nav__open__container{
+    display: flex;
+    justify-content: flex-end !important;
+    text-align: end !important;
+} */
+.nav__menu li span{
+    font-size: 17px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.nav__right__cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (min-width: 500px){
+
+    .Nav{
+        padding: 0 10px;
+    }
+}
+@media screen and (min-width: 780px){
+    
+}
+@media screen and (min-width: 850px){
+    
+  .nav__right .nav__right__menuOpen{
+    display: none;
+  }
+  .active{
+    display: none;
+  }
+  .nav__right__laptop{
+    display: initial;
+  }
+  .nav__right__laptop .menu__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu__list li{
+    list-style: none;
+    margin-right: 15px;
+  }
+  .menu__list li a{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  
+}
+
+@media screen and (min-width: 1280px){
+    .Nav{
+        padding: 0;
+    }
+}

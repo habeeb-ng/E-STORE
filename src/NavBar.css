@@ -1,0 +1,128 @@
+
+.nav__container{
+    position:relative;
+
+}
+.currentPage{
+    border-bottom: 2px solid black;
+}
+
+.navBar .menu__content{
+    display: flex;
+    justify-content: space-around;
+}
+.menu__content a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.menu__content a{
+    justify-content: flex-end;
+}
+.menu__content a span{
+    order: 2;
+}
+.menu__content a svg{
+    order: 1;
+}
+.nav_menuOpen,
+.clearIcon{
+    display: none !important;
+}
+@media screen and (max-width: 920px){
+    .menu__content a span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .currentPage a{
+    border-bottom: none;
+    background-color: black;
+    color: white;
+    
+    }
+
+    .navOption{
+        /* padding: 10px */
+    }
+    .navOption:hover{
+        background-color: black;
+        color: white !important;
+    }
+    .nav__container{
+        text-align: end;
+        object-fit:contain;
+        padding: 10px;
+        
+        
+    }
+    .navBar{
+        height: 100vh;
+        width: 20vw;
+        background-color: white;
+        border-radius: 2px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+        position: absolute;
+        padding: 10px;
+        right: 0;
+        top: 0;
+        pointer-events: none; /* this makes the mouse not work when it is invisible*/
+        opacity: 0;
+        transform: translateX(10px);
+        transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+    }
+
+    .navBar.active{
+        
+        opacity:1;
+        transform: translateX(0);
+        pointer-events: auto; /*mouse event start to wrok when it is visible*/
+    }
+    
+    .nav_menuOpen,
+    .clearIcon{
+        display: initial !important;
+        cursor: pointer;
+    }
+    .navBar .menu__content{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .menu_container{
+        height: 100%;
+        width: 20vw;
+        /* background-color: red; */
+    }
+    .menu__content{
+        /* background-color: red; */
+        /* height: 100%; */
+    }
+    .menu__content a{
+        flex-direction: row;
+        gap: 5px;
+        padding: 10px;
+    }
+    .menu__content a:hover{
+        background-color: black;
+        color: white;
+    }
+    .menu__content a span{
+        order: 2 ;
+    }
+    .menu__content a svg{
+        order: 1;
+    }
+
+
+}
+@media screen and (max-width: 500px){
+    .navBar{
+        width: 50vw;
+    }
+}

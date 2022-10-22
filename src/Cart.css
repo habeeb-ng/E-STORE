@@ -1,0 +1,151 @@
+.Cart{
+    
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+    
+}
+.cart__container{
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px black;
+    padding: 10px;
+}
+.Cart>h1{
+    font-weight: normal;
+    padding-bottom: 10px;
+    /* color: white; */
+}
+.cart__summary{
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    
+}
+.cart__summary h2{
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.cart__summary h2>span{
+    font-weight: bold;
+}
+.cart__summary button{
+    padding:5px;
+    /* width: 200px; */
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cart__summary button:hover{
+    background-color: rgb(45, 45, 45);
+}
+.cart__content{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.CartProduct{
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    /* background-color: grey; */
+
+}
+.cartProduct__image{
+    /* width:300px; */
+    width: 30%;
+    
+    
+}
+.cartProduct__image a{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartProduct__detail{
+    width: 70%;
+    
+}
+.cartProduct__image img{
+    aspect-ratio: 16/10;
+}
+.cartProduct__detail h3{
+ font-size: 25px;
+ color:#3a86ff;
+ margin-bottom: 5px
+}
+.cartProduct__detail h4,
+.cartProduct__detail p{
+    font-size:18px;
+    margin-bottom: 5px;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+.cartProduct__detail p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cartProduct__detail form{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    width: 80px;
+    padding:5px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 5px
+}
+.cartProduct__detail form select{
+    outline: none;
+    border: none;
+
+}
+.cartProduct__detail form input{
+    width: 60%;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 2px;
+    box-sizing: border-box;
+    font-size: 16px;
+    
+}
+.cartProduct__detail button{
+    font-size: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.unSigned{
+    display: flex;
+    gap: 10px;
+}
+.unSigned button{
+    padding: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+

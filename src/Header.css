@@ -1,0 +1,101 @@
+.Header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+.Header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.Header__logo{
+    flex:.1;
+}
+.Header__logo> h2{
+    font-size: 30px;
+    /* color: #495057; */
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    
+    padding: 8px;
+    /* width: 100px; */
+    /* border-radius: 8px; */
+}
+.header__search{
+    flex: .4;
+    padding: 8px;
+    box-sizing: border-box;
+    /* box-shadow: inset 1px 1px 7px lightgray; */
+    /* overflow: auto; */
+}
+.header__search > form{
+    /* display: flex; */
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: black;
+    background-color: rgb(227, 226, 226);
+    width: 100%;
+}
+
+.header__search > form > input{
+    outline: none;
+    border: none;
+    color: black;
+    background: none;
+    width: 100%;
+    font-size: 20px;
+    /* box-shadow: inset 1px 1px 7px lightgray; */
+}
+.nav__container{
+    flex: .4;
+}
+@media screen and (max-width: 920px){
+    .header__search{
+    flex: .4;
+    }
+    .header__search > form{
+        height: 15px
+    }
+    .header__search > form > input{
+        font-size: 16px;
+    }
+    .Header__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .Header__logo> h2{
+    font-size: 25px;
+}
+}
+@media screen and (max-width: 780px){
+    .Header__logo{
+        flex:.27;
+        justify-content: flex-start;
+    }
+    .header__search{
+    flex: .6;
+    }
+    .nav__container{
+    flex: .2;
+    }
+    .header__search > form > input{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .Header__logo{
+        flex:.3;
+    }
+    .header__search{
+    flex: .8;
+    }
+    .nav__container{
+    flex: .2;
+    }
+}

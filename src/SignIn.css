@@ -1,0 +1,108 @@
+.SignIn,
+.signUp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+.SignIn h2,
+.signUp h2{
+    font-weight: normal;
+    margin-top: 10px;
+}
+.signIn__container,
+.signUp__container{
+    width: 320px;
+    object-fit: contain;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    /* border: 1px solid lightgrey; */
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px gray;
+    
+    
+}
+.signIn__container h3,
+.signUp__container h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.signIn__container form,
+.signUp__container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px
+}
+.signIn__container form p{
+    font-size: 12px;
+}
+.signIn__container form p a{
+    color: #3a86ff;
+    text-decoration: none;
+}
+.signIn__container form p a:hover{
+    color: blue;
+}
+
+
+.signIn__container form input,
+.signUp__container form input
+{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.signIn__container form input:focus,
+.signUp__container form input:focus
+{
+    border: 2px solid gray;
+}
+.signIn__container form button,
+.signUp__container form button
+{
+    width:300px;
+    height: 30px;
+    background-color: blaCK;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.signIn__container form button:hover,
+.ErrorMessage button:hover{
+    background-color: #353535;
+}
+.ErrorMessage{
+    color: red;
+}
+.ErrorMessage button{
+    padding: 5px;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.displayMessage p{
+   font-size: 13px;
+}
